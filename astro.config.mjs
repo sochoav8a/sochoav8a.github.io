@@ -3,5 +3,5 @@ import { defineConfig } from 'astro/config';
 
 // https://astro.build/config
 export default defineConfig({
-  base: '/mi-sitio-astro/',
+  base: '/sochoav8a-dev/',
 });

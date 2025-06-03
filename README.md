@@ -1,4 +1,4 @@
-# Mi Sitio Astro
+# Sochoav8a Dev - Sitio Astro
 
 Este es un sitio web estático construido con [Astro](https://astro.build) y configurado para desplegarse automáticamente en GitHub Pages.
 
@@ -48,12 +48,12 @@ Este es un sitio web estático construido con [Astro](https://astro.build) y con
 
 ## 🔧 Configuración
 
-- **Base URL:** `/mi-sitio-astro/` (configurado en `astro.config.mjs`)
-- **Sitio público:** `https://[tu-usuario].github.io/mi-sitio-astro/`
+- **Base URL:** `/sochoav8a-dev/` (configurado en `astro.config.mjs`)
+- **Sitio público:** `https://sochoav8a.github.io/sochoav8a-dev/`
 
 ## 📝 Notas importantes
 
-- El archivo `astro.config.mjs` incluye la configuración `base: '/mi-sitio-astro/'` necesaria para GitHub Pages
+- El archivo `astro.config.mjs` incluye la configuración `base: '/sochoav8a-dev/'` necesaria para GitHub Pages
 - La carpeta `docs/` se genera automáticamente y contiene el sitio construido
 - El workflow de GitHub Actions está configurado para desplegar automáticamente en cada push a `main`
 
