@@ -6,6 +6,7 @@
     "dev": "astro dev",
     "build": "astro build",
     "preview": "astro preview",
+    "predeploy": "rm -rf docs && cp -r dist docs",
     "astro": "astro"
   },
   "dependencies": {
