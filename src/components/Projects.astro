@@ -2,6 +2,15 @@
 // Projects showcase component
 const projects = [
   {
+    title: "CBAM CycleGAN",
+    description: "Enhanced CycleGAN architecture incorporating Convolutional Block Attention Module (CBAM) for improved domain translation. Combines channel and spatial attention mechanisms to achieve better image-to-image translation results with more accurate feature preservation.",
+    tech: ["Python", "PyTorch", "Computer Vision", "Deep Learning", "GANs"],
+    image: "/cbam_cyclegan/arquitecture.jpg",
+    github: "https://github.com/sochoav8a/cbam-cyclegan",
+    demo: "#",
+    featured: true
+  },
+  {
     title: "Data Analytics Dashboard",
     description: "Interactive dashboard built with React and D3.js for visualizing complex datasets. Features real-time updates and advanced filtering capabilities.",
     tech: ["React", "D3.js", "Python", "PostgreSQL"],
@@ -52,11 +61,19 @@ const projects = [
     <div class="grid md:grid-cols-2 gap-8">
       {projects.map((project) => (
         <div class={`group relative bg-slate-800 rounded-xl overflow-hidden border border-slate-700 hover:border-emerald-500/50 transition-all duration-300 hover:shadow-2xl hover:shadow-emerald-500/10 ${project.featured ? 'md:col-span-2 lg:col-span-1' : ''}`}>
-          <!-- Project image placeholder -->
-          <div class="aspect-video bg-gradient-to-br from-slate-700 to-slate-900 flex items-center justify-center">
-            <svg class="w-16 h-16 text-slate-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
-            </svg>
+          <!-- Project image -->
+          <div class="aspect-video bg-gradient-to-br from-slate-700 to-slate-900 flex items-center justify-center overflow-hidden">
+            {project.image.startsWith('/cbam_cyclegan/') ? (
+              <img 
+                src={project.image} 
+                alt={project.title}
+                class="w-full h-full object-contain bg-white p-4"
+              />
+            ) : (
+              <svg class="w-16 h-16 text-slate-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
+              </svg>
+            )}
           </div>
           
           <div class="p-6">
