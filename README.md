@@ -1,4 +1,61 @@
-# Astro Starter Kit: Minimal
+# Mi Sitio Astro
+
+Este es un sitio web estático construido con [Astro](https://astro.build) y configurado para desplegarse automáticamente en GitHub Pages.
+
+## 🚀 Estructura del proyecto
+
+```text
+/
+├── public/
+│   └── favicon.svg
+├── src/
+│   └── pages/
+│       └── index.astro
+├── docs/              # Carpeta generada para GitHub Pages
+├── .github/
+│   └── workflows/
+│       └── deploy-astro.yml
+└── package.json
+```
+
+## 🧞 Comandos disponibles
+
+| Comando                   | Acción                                           |
+| :------------------------ | :----------------------------------------------- |
+| `npm install`             | Instala las dependencias                        |
+| `npm run dev`             | Inicia el servidor de desarrollo local en `localhost:4321` |
+| `npm run build`           | Construye el sitio para producción en `./dist/` |
+| `npm run preview`         | Vista previa del sitio construido localmente     |
+| `npm run predeploy`       | Copia `dist/` a `docs/` para GitHub Pages       |
+
+## 📦 Despliegue en GitHub Pages
+
+### Opción 1: Carpeta docs/ (Recomendado para simplicidad)
+
+1. Ejecuta `npm run build && npm run predeploy`
+2. Haz commit y push: `git add . && git commit -m "Update site" && git push`
+3. En GitHub → Settings → Pages, selecciona:
+   - **Branch:** `main`
+   - **Folder:** `/docs`
+
+### Opción 2: GitHub Actions (Automatizado)
+
+1. Ejecuta `npm run build && git add . && git commit -m "Update site" && git push`
+2. En GitHub → Settings → Pages, selecciona:
+   - **Branch:** `gh-pages`
+   - **Folder:** `/ (root)`
+3. GitHub Actions se encargará automáticamente del despliegue
+
+## 🔧 Configuración
+
+- **Base URL:** `/mi-sitio-astro/` (configurado en `astro.config.mjs`)
+- **Sitio público:** `https://[tu-usuario].github.io/mi-sitio-astro/`
+
+## 📝 Notas importantes
+
+- El archivo `astro.config.mjs` incluye la configuración `base: '/mi-sitio-astro/'` necesaria para GitHub Pages
+- La carpeta `docs/` se genera automáticamente y contiene el sitio construido
+- El workflow de GitHub Actions está configurado para desplegar automáticamente en cada push a `main`
 
 ```sh
 npm create astro@latest -- --template minimal
