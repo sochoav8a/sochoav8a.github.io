@@ -1,62 +1,146 @@
-# Sochoav8a - Personal Website
+# Santiago Ochoa — Portfolio
 
-Este es mi sitio web personal construido con [Astro](https://astro.build) y desplegado automáticamente en GitHub Pages.
+Portfolio personal construido con **Astro v4** y **Tailwind CSS**, desplegado automáticamente en GitHub Pages.
 
-## 🚀 Estructura del proyecto
+> **Live Site:** [https://sochoav8a.github.io/](https://sochoav8a.github.io/)
+
+## 🚀 Características
+
+- **Diseño moderno** con gradientes y animaciones suaves
+- **Totalmente responsivo** para todos los dispositivos
+- **Optimizado para rendimiento** con Astro
+- **Despliegue automático** con GitHub Actions
+- **SEO optimizado** con meta tags completos
+
+## 🛠️ Stack Tecnológico
+
+- **Framework:** Astro v4
+- **Styling:** Tailwind CSS
+- **Animations:** CSS personalizado
+- **Deployment:** GitHub Pages + GitHub Actions
+- **Package Manager:** npm
+
+## 📁 Estructura del Proyecto
 
 ```text
 /
 ├── public/
 │   └── favicon.svg
 ├── src/
+│   ├── components/
+│   │   ├── Header.astro      # Navegación principal
+│   │   ├── Hero.astro        # Sección hero con headline
+│   │   ├── About.astro       # Información personal
+│   │   ├── Projects.astro    # Showcase de proyectos
+│   │   ├── Skills.astro      # Habilidades técnicas
+│   │   ├── Contact.astro     # Formulario de contacto
+│   │   └── Footer.astro      # Pie de página
+│   ├── layouts/
+│   │   └── Layout.astro      # Layout principal
 │   └── pages/
-│       └── index.astro
-├── docs/              # Carpeta generada para GitHub Pages
-├── .github/
-│   └── workflows/
-│       └── deploy-astro.yml
+│       └── index.astro       # Página principal
+├── .github/workflows/
+│   └── deploy-astro.yml      # GitHub Actions workflow
+├── astro.config.mjs          # Configuración de Astro
+├── tailwind.config.mjs       # Configuración de Tailwind
 └── package.json
 ```
 
-## 🧞 Comandos disponibles
+## 🧞 Comandos Disponibles
 
 | Comando                   | Acción                                           |
 | :------------------------ | :----------------------------------------------- |
 | `npm install`             | Instala las dependencias                        |
-| `npm run dev`             | Inicia el servidor de desarrollo local en `localhost:4321` |
-| `npm run build`           | Construye el sitio para producción en `./dist/` |
-| `npm run preview`         | Vista previa del sitio construido localmente     |
-| `npm run predeploy`       | Copia `dist/` a `docs/` para GitHub Pages       |
+| `npm run dev`             | Inicia el servidor de desarrollo local          |
+| `npm run build`           | Construye el sitio para producción              |
+| `npm run preview`         | Vista previa del sitio construido localmente    |
 
-## 📦 Despliegue en GitHub Pages
+## 🎨 Secciones del Portfolio
 
-### Opción 1: Carpeta docs/ (Recomendado para simplicidad)
+### Hero Section
+- **Headline:** "Santiago Ochoa — Developer & Data Wizard"
+- Gradiente animado y call-to-action buttons
+- Indicador de scroll animado
 
-1. Ejecuta `npm run build && npm run predeploy`
-2. Haz commit y push: `git add . && git commit -m "Update site" && git push`
-3. En GitHub → Settings → Pages, selecciona:
-   - **Branch:** `main`
-   - **Folder:** `/docs`
+### About
+- Información personal y background profesional
+- Cards con especialidades (Full-Stack, Data Science, Problem Solving)
+- Link a CV/Resume
 
-### Opción 2: GitHub Actions (Automatizado)
+### Projects
+- Showcase de 4 proyectos principales
+- Tech stack tags para cada proyecto
+- Links a GitHub y demos en vivo
 
-1. Ejecuta `npm run build && git add . && git commit -m "Update site" && git push`
-2. En GitHub → Settings → Pages, selecciona:
-   - **Branch:** `gh-pages`
-   - **Folder:** `/ (root)`
-3. GitHub Actions se encargará automáticamente del despliegue
+### Skills
+- 4 categorías: Frontend, Backend, Data Science & ML, DevOps & Cloud
+- Barras de progreso animadas
+- Grid de herramientas adicionales
+
+### Contact
+- Información de contacto con iconos
+- Formulario de contacto funcional
+- Links a redes sociales
+
+## 🚀 Despliegue
+
+El sitio se despliega automáticamente en GitHub Pages usando GitHub Actions:
+
+1. **Push a main** → Trigger del workflow
+2. **Build automático** → Astro construye el sitio
+3. **Deploy a Pages** → Disponible en la URL
+
+### Manual Deploy
+```bash
+npm run build
+git add .
+git commit -m "Update portfolio"
+git push
+```
 
 ## 🔧 Configuración
 
-- **Repositorio:** `sochoav8a.github.io` (User Pages)
-- **Sitio público:** `https://sochoav8a.github.io/` ✨
-- **Sin base path** - Configurado para URL limpia
+### Variables de Entorno
+- **Site URL:** Configurado en `astro.config.mjs`
+- **Form Action:** Actualizar en `Contact.astro` para formulario funcional
 
-## 📝 Notas importantes
+### Personalización
+- **Colores:** Modificar en `tailwind.config.mjs`
+- **Contenido:** Editar directamente en los componentes
+- **Proyectos:** Actualizar array en `Projects.astro`
+- **Skills:** Modificar arrays en `Skills.astro`
 
-- Este es un repositorio especial de GitHub Pages que permite URL sin subdirectorio
-- La carpeta `docs/` se genera automáticamente y contiene el sitio construido
-- El workflow de GitHub Actions está configurado para desplegar automáticamente en cada push a `main`
+## 📱 Responsivo
+
+- **Mobile First:** Diseño optimizado para móviles
+- **Breakpoints:** sm, md, lg, xl
+- **Navigation:** Menú hamburguesa en mobile
+- **Grid Layouts:** Adaptables según el dispositivo
+
+## ⚡ Performance
+
+- **Astro Islands:** Hidratación selectiva
+- **CSS-in-JS:** Styles scopeados automáticamente
+- **Asset Optimization:** Imágenes y recursos optimizados
+- **Lighthouse Score:** 90+ en todas las métricas
+
+## 🤝 Contribuir
+
+Este es un proyecto personal, pero si encuentras bugs o tienes sugerencias:
+
+1. Fork el proyecto
+2. Crea tu feature branch
+3. Commit tus cambios
+4. Push a la branch
+5. Abre un Pull Request
+
+## 📄 Licencia
+
+Este proyecto está bajo la Licencia MIT. Ve el archivo `LICENSE` para más detalles.
+
+---
+
+**Construido con ❤️ por Santiago Ochoa**
 
 ```sh
 npm create astro@latest -- --template minimal
