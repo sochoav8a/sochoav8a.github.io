@@ -1,20 +1,26 @@
 {
-  "name": "sochoav8a-portfolio",
+  "name": "mi-sitio-astro",
   "type": "module",
-  "version": "1.0.0",
+  "version": "0.0.1",
   "scripts": {
     "dev": "astro dev",
     "start": "astro dev",
-    "build": "astro build",
+    "build": "astro check && astro build",
     "preview": "astro preview",
-    "predeploy": "rm -rf docs && cp -r dist docs",
-    "astro": "astro"
+    "astro": "astro",
+    "predeploy": "npm run build && cp -r dist/* docs/",
+    "deploy": "npm run predeploy && git add docs && git commit -m 'Deploy to GitHub Pages' && git push"
   },
   "dependencies": {
-    "astro": "^4.15.11",
-    "@astrojs/tailwind": "^5.1.1",
-    "@astrojs/mdx": "^3.1.8",
-    "tailwindcss": "^3.4.13",
-    "@tailwindcss/typography": "^0.5.15"
+    "astro": "^4.16.0",
+    "@astrojs/check": "^0.9.0",
+    "@astrojs/tailwind": "^5.1.0",
+    "@astrojs/mdx": "^3.1.0",
+    "@tailwindcss/typography": "^0.5.15",
+    "tailwindcss": "^3.4.0",
+    "typescript": "^5.4.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0"
   }
 }
