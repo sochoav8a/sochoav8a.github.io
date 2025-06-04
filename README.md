@@ -68,7 +68,7 @@ Portfolio personal construido con **Astro v4** y **Tailwind CSS**, desplegado au
 - Link a CV/Resume
 
 ### Projects
-- Showcase de 4 proyectos principales
+- Showcase de un proyecto principal
 - Tech stack tags para cada proyecto
 - Links a GitHub y demos en vivo
 
