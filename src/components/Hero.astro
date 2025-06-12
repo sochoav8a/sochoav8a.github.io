@@ -1,45 +1,84 @@
 ---
-// Hero section with headline and CTA
+// Hero section with terminal-style design
 ---
 
-<section class="min-h-screen flex items-center justify-center px-4 sm:px-6 lg:px-8 pt-16">
-  <div class="max-w-4xl mx-auto text-center">
-    <div class="mb-8">
-      <h1 class="text-5xl sm:text-6xl lg:text-7xl font-bold tracking-tight mb-6">
-        <span class="bg-gradient-to-r from-emerald-400 to-cyan-400 bg-clip-text text-transparent">
-          Santiago Ochoa
-        </span>
-      </h1>
-      <p class="text-2xl sm:text-3xl lg:text-4xl text-slate-300 font-light">
-        Developer & Data Wizard
-      </p>
+<section class="min-h-screen flex items-center justify-center px-6 pt-20">
+  <div class="max-w-4xl mx-auto">
+    <div class="border-1 border-black rounded-hypr p-8 bg-white hover:border-cyber-blue transition-colors duration-300">
+      <!-- Terminal header -->
+      <div class="flex items-center justify-between border-b-1 border-black pb-4 mb-8">
+        <div class="flex space-x-2">
+          <div class="w-3 h-3 border-1 border-black bg-white rounded-full"></div>
+          <div class="w-3 h-3 border-1 border-black bg-black rounded-full"></div>
+          <div class="w-3 h-3 border-1 border-black bg-white rounded-full"></div>
+        </div>
+        <div class="text-sm text-cyber-blue">~/portfolio</div>
+      </div>
+      
+      <!-- Terminal content -->
+      <div class="space-y-4">
+        <div class="flex items-center">
+          <span class="text-gray-600">user@system:~$</span>
+          <span class="ml-2">whoami</span>
+        </div>
+        
+        <div class="pl-4">
+          <h1 class="text-4xl md:text-6xl font-bold mb-2">Santiago Ochoa</h1>
+          <p class="text-xl md:text-2xl text-gray-600">Developer & Data Wizard</p>
+        </div>
+        
+        <div class="flex items-center mt-8">
+          <span class="text-gray-600">user@system:~$</span>
+          <span class="ml-2">cat about.txt</span>
+        </div>
+        
+        <div class="pl-4 border-l-2 border-cyber-blue max-w-2xl">
+          <p class="text-lg leading-relaxed">
+            I craft elegant solutions that bridge the gap between complex data and intuitive user experiences. 
+            Specializing in full-stack development and data science.
+          </p>
+        </div>
+        
+        <div class="flex items-center mt-8">
+          <span class="text-gray-600">user@system:~$</span>
+          <span class="ml-2">ls ./commands/</span>
+        </div>
+        
+        <div class="pl-4 flex flex-col sm:flex-row gap-4 mt-4">
+          <a 
+            href="#projects" 
+            class="inline-block border-1 border-black rounded-hypr px-6 py-3 hover:bg-black hover:text-white hover:border-cyber-blue transition-all duration-200 text-center"
+          >
+            ./view-projects
+          </a>
+          <a 
+            href="#contact" 
+            class="inline-block border-1 border-cyber-blue rounded-hypr px-6 py-3 text-cyber-blue hover:bg-cyber-blue hover:text-white transition-all duration-200 text-center"
+          >
+            ./contact-me
+          </a>
+        </div>
+        
+        <div class="flex items-center mt-8">
+          <span class="text-gray-600">user@system:~$</span>
+          <span class="ml-2 animate-blink text-cyber-blue glow-cursor">█</span>
+        </div>
+      </div>
     </div>
     
-    <p class="text-lg sm:text-xl text-slate-400 max-w-2xl mx-auto mb-12 leading-relaxed">
-      I craft elegant solutions that bridge the gap between complex data and intuitive user experiences. 
-      Specializing in full-stack development and data science.
-    </p>
-    
-    <div class="flex flex-col sm:flex-row gap-4 justify-center items-center">
-      <a 
-        href="#projects" 
-        class="bg-emerald-600 hover:bg-emerald-700 text-white px-8 py-3 rounded-lg font-medium transition-colors duration-300 shadow-lg hover:shadow-emerald-500/25"
-      >
-        View My Work
-      </a>
-      <a 
-        href="#contact" 
-        class="border border-slate-600 hover:border-emerald-400 text-slate-300 hover:text-emerald-400 px-8 py-3 rounded-lg font-medium transition-colors duration-300"
-      >
-        Get In Touch
-      </a>
-    </div>
-    
-    <!-- Scroll indicator -->
-    <div class="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
-      <svg class="w-6 h-6 text-slate-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
-      </svg>
+    <!-- Minimal scroll indicator -->
+    <div class="text-center mt-8">
+      <div class="inline-block border-1 border-black rounded-hypr p-3 animate-pulse hover:border-cyber-blue transition-colors duration-200">
+        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
+        </svg>
+      </div>
     </div>
   </div>
-</section> 
+</section>
+
+<style>
+  .glow-cursor {
+    text-shadow: 0 0 10px #00d4ff, 0 0 20px #00d4ff;
+  }
+</style> 

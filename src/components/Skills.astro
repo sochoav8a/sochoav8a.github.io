@@ -3,7 +3,6 @@
 const skillCategories = [
   {
     title: "Frontend Development",
-    icon: "M12 2L2 7v10c0 5.55 3.84 10 9 11 5.16-1 9-5.45 9-11V7l-10-5z",
     skills: [
       { name: "React", level: 90 },
       { name: "Vue.js", level: 85 },
@@ -14,10 +13,9 @@ const skillCategories = [
     ]
   },
   {
-    title: "Backend Development",
-    icon: "M4 7v10c0 2.21 1.79 4 4 4h8c2.21 0 4-1.79 4-4V7c0-2.21-1.79-4-4-4H8c-2.21 0-4 1.79-4 4z",
+    title: "Backend Development", 
     skills: [
-      { name: "Typescript", level: 88 },
+      { name: "TypeScript", level: 88 },
       { name: "Python", level: 95 },
       { name: "Go", level: 85 },
       { name: "PostgreSQL", level: 90 },
@@ -27,7 +25,6 @@ const skillCategories = [
   },
   {
     title: "Data Science & ML",
-    icon: "M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z",
     skills: [
       { name: "PyTorch", level: 95 },
       { name: "scikit-learn", level: 88 },
@@ -39,7 +36,6 @@ const skillCategories = [
   },
   {
     title: "DevOps & Cloud",
-    icon: "M3 15a4 4 0 004 4h9a5 5 0 10-.1-9.999 5.002 5.002 0 10-9.78 2.096A4.001 4.001 0 003 15z",
     skills: [
       { name: "AWS", level: 80 },
       { name: "Docker", level: 85 },
@@ -50,39 +46,53 @@ const skillCategories = [
     ]
   }
 ];
+
+const tools = [
+  "Python", "PyTorch", "TensorFlow", "Scikit-learn",
+  "Hugging Face Transformers", "OpenAI API", "Generative AI",
+  "GANs & Diffusion Models", "NLP", "Transformer Models",
+  "Computer Vision", "TorchVision", "OpenCV",
+  "Deep Learning", "Machine Learning",
+  "Pandas", "Polars", "NumPy",
+  "CUDA & Multi-GPU (DDP)",
+  "Airflow", "Apache Spark",
+  "SQL / NoSQL", "Snowflake",
+  "Docker", "Kubernetes",
+  "MLOps CI/CD", "Azure ML & AWS SageMaker"
+];
 ---
 
-<section id="skills" class="py-20 px-4 sm:px-6 lg:px-8">
+<section id="skills" class="py-20 px-6">
   <div class="max-w-6xl mx-auto">
-    <div class="text-center mb-16">
-      <h2 class="text-4xl font-bold text-slate-100 mb-4">Technical Skills</h2>
-      <p class="text-slate-400 text-lg max-w-2xl mx-auto">
-        A comprehensive overview of my technical expertise across different domains.
-      </p>
+    <!-- Section header -->
+    <div class="mb-16">
+      <div class="flex items-center mb-4">
+        <span class="text-gray-600">user@system:~$</span>
+        <span class="ml-2">cat ./skills/expertise.json</span>
+      </div>
+      <h2 class="text-4xl font-bold border-b-2 border-cyber-blue pb-2 inline-block">Skills</h2>
     </div>
     
-    <div class="grid lg:grid-cols-2 gap-8">
-      {skillCategories.map((category) => (
-        <div class="bg-slate-800 rounded-xl p-6 border border-slate-700 hover:border-emerald-500/50 transition-all duration-300">
-          <div class="flex items-center mb-6">
-            <div class="w-12 h-12 bg-emerald-600 rounded-lg flex items-center justify-center">
-              <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d={category.icon}></path>
-              </svg>
-            </div>
-            <h3 class="text-xl font-bold text-slate-100 ml-4">{category.title}</h3>
+    <!-- Skills categories -->
+    <div class="grid lg:grid-cols-2 gap-8 mb-16">
+      {skillCategories.map((category, categoryIndex) => (
+        <div class="border-1 border-black bg-white rounded-hypr overflow-hidden hover:border-cyber-blue transition-colors duration-300">
+          <!-- Category header -->
+          <div class="border-b-1 border-black p-4 bg-black text-white">
+            <h3 class="font-bold">[{categoryIndex + 1}] {category.title}</h3>
           </div>
           
-          <div class="space-y-4">
+          <!-- Skills list -->
+          <div class="p-6 space-y-4">
             {category.skills.map((skill) => (
               <div class="skill-item">
                 <div class="flex justify-between items-center mb-2">
-                  <span class="text-slate-300 font-medium">{skill.name}</span>
-                  <span class="text-slate-400 text-sm">{skill.level}%</span>
+                  <span class="font-medium">{skill.name}</span>
+                  <span class="text-cyber-blue text-sm font-mono">{skill.level}%</span>
                 </div>
-                <div class="w-full bg-slate-700 rounded-full h-2">
+                <div class="w-full bg-gray-200 rounded-full h-2 overflow-hidden">
                   <div 
-                    class="bg-gradient-to-r from-emerald-500 to-cyan-500 h-2 rounded-full skill-bar transition-all duration-1000 ease-out"
+                    class="bg-gradient-to-r from-cyber-blue to-cyber-cyan h-2 rounded-full transition-all duration-1000 ease-out skill-bar"
                     style={`width: ${skill.level}%`}
                   ></div>
                 </div>
@@ -93,27 +103,25 @@ const skillCategories = [
       ))}
     </div>
     
-    <!-- Additional skills or certifications -->
-    <div class="mt-16 text-center">
-      <h3 class="text-2xl font-bold text-slate-100 mb-8">Tools & Technologies</h3>
-      <div class="flex flex-wrap justify-center gap-3">
-        {[
-          "Python", "PyTorch", "TensorFlow", "Scikit-learn",
-          "Hugging Face Transformers", "OpenAI API", "Generative AI",
-          "GANs & Diffusion Models", "NLP", "Transformer Models",
-          "Computer Vision", "TorchVision", "OpenCV",
-          "Deep Learning", "Machine Learning",
-          "Pandas", "Polars", "NumPy",
-          "CUDA & Multi-GPU (DDP)",
-          "Airflow", "Apache Spark",
-          "SQL / NoSQL", "Snowflake",
-          "Docker", "Kubernetes",
-          "MLOps CI/CD", "Azure ML & AWS SageMaker"
-        ].map((tool) => (
-          <span class="px-4 py-2 bg-slate-700 text-slate-300 rounded-lg border border-slate-600 hover:border-emerald-500 hover:text-emerald-400 transition-colors duration-300">
-            {tool}
-          </span>
-        ))}
+    <!-- Tools section -->
+    <div class="border-1 border-black bg-white rounded-hypr overflow-hidden hover:border-cyber-blue transition-colors duration-300">
+      <div class="border-b-1 border-black p-4 bg-black text-white">
+        <h3 class="font-bold">[5] Tools & Technologies</h3>
+      </div>
+      
+      <div class="p-6">
+        <div class="mb-6">
+          <span class="text-gray-600">user@system:~$</span>
+          <span class="ml-2">which --all</span>
+        </div>
+        
+        <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3">
+          {tools.map((tool) => (
+            <div class="border-1 border-gray-300 rounded-hypr p-3 text-sm hover:border-cyber-blue hover:text-cyber-blue transition-all duration-200 hover:shadow-sm">
+              {tool}
+            </div>
+          ))}
+        </div>
       </div>
     </div>
   </div>
@@ -132,5 +140,6 @@ const skillCategories = [
   
   .skill-item:hover .skill-bar {
     filter: brightness(1.2);
+    box-shadow: 0 0 10px rgba(0, 212, 255, 0.3);
   }
 </style> 
