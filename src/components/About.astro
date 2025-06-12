@@ -1,87 +1,130 @@
 ---
-// About section component
+// Brutalist About Design
 ---
 
-<section id="about" class="py-20 px-6">
-  <div class="max-w-6xl mx-auto">
-    <!-- Section header -->
+<section id="about" class="py-20 px-6 bg-mono-50 relative overflow-hidden">
+  <!-- Background geometric elements -->
+  <div class="absolute inset-0">
+    <div class="absolute top-10 left-10 w-24 h-48 bg-brutal-blue transform rotate-12 opacity-20"></div>
+    <div class="absolute bottom-20 right-20 w-32 h-32 bg-brutal-green transform -rotate-45 opacity-20"></div>
+    <div class="absolute top-1/2 left-1/4 w-16 h-16 bg-brutal-yellow opacity-30"></div>
+  </div>
+
+  <div class="max-w-7xl mx-auto relative z-10">
+    <!-- Section Header -->
     <div class="mb-16">
-      <div class="flex items-center mb-4">
-        <span class="text-gray-600">user@system:~$</span>
-        <span class="ml-2">cat ./about/info.md</span>
+      <div class="inline-block bg-brutal-red text-mono-0 px-8 py-4 border-4 border-mono-1000 shadow-brutal-lg transform -rotate-1 mb-8">
+        <h2 class="text-4xl md:text-6xl font-black uppercase tracking-tight">
+          ABOUT ME
+        </h2>
       </div>
-      <h2 class="text-4xl font-bold border-b-2 border-cyber-blue pb-2 inline-block">About</h2>
     </div>
-    
-    <div class="grid lg:grid-cols-2 gap-12">
-      <!-- Main content -->
-      <div class="space-y-6">
-        <div class="border-l-2 border-cyber-blue pl-6">
-          <p class="text-lg leading-relaxed mb-6">
-            With a unique blend of software development expertise and data science acumen, I specialize in 
-            building robust applications that not only perform excellently but also provide actionable insights 
-            from complex datasets.
+
+    <div class="grid lg:grid-cols-2 gap-12 items-start">
+      <!-- Left Column - Main Content -->
+      <div class="space-y-8">
+        <!-- Main Description Block -->
+        <div class="bg-mono-0 p-8 border-4 border-mono-1000 shadow-brutal-lg">
+          <div class="border-l-6 border-brutal-blue pl-6 mb-6">
+            <h3 class="text-2xl font-black text-mono-1000 mb-4 uppercase">WHO AM I?</h3>
+          </div>
+          <p class="text-lg font-medium text-mono-800 leading-relaxed mb-6">
+            I'm a full-stack developer and data scientist who thrives on turning complex problems into elegant solutions. 
+            With a background in both traditional development and cutting-edge ML, I bridge the gap between data insights and user experience.
           </p>
-          
-          <p class="text-lg leading-relaxed mb-6">
-            My journey in technology has taken me through various domains, from crafting intuitive user interfaces 
-            to architecting scalable backend systems and developing sophisticated data pipelines.
-          </p>
-          
-          <p class="text-lg leading-relaxed">
-            When I'm not coding, you'll find me exploring new technologies, contributing to open-source projects, 
-            or diving deep into the latest developments in machine learning and AI.
+          <p class="text-lg font-medium text-mono-800 leading-relaxed">
+            When I'm not coding, you'll find me exploring new technologies, contributing to open source, 
+            or diving deep into the latest research papers in AI and machine learning.
           </p>
         </div>
-        
-        <div class="pt-6">
-          <a 
-            href="/resume.pdf" 
-            download="Santiago_Ochoa_Resume.pdf"
-            target="_blank"
-            class="inline-flex items-center border-1 border-cyber-blue rounded-hypr px-6 py-3 text-cyber-blue hover:bg-cyber-blue hover:text-white transition-all duration-200"
-          >
-            <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path>
-            </svg>
-            ./download-resume
-          </a>
+
+        <!-- Experience Block -->
+        <div class="bg-brutal-yellow p-8 border-4 border-mono-1000 shadow-brutal-lg text-mono-1000">
+          <div class="border-l-6 border-mono-1000 pl-6 mb-6">
+            <h3 class="text-2xl font-black mb-4 uppercase">EXPERIENCE</h3>
+          </div>
+          <div class="grid grid-cols-2 gap-4 font-bold">
+            <div>
+              <span class="text-3xl font-black">4+</span>
+              <p class="text-sm uppercase">YEARS CODING</p>
+            </div>
+            <div>
+              <span class="text-3xl font-black">50+</span>
+              <p class="text-sm uppercase">PROJECTS</p>
+            </div>
+            <div>
+              <span class="text-3xl font-black">10+</span>
+              <p class="text-sm uppercase">TECHNOLOGIES</p>
+            </div>
+            <div>
+              <span class="text-3xl font-black">∞</span>
+              <p class="text-sm uppercase">PROBLEMS SOLVED</p>
+            </div>
+          </div>
         </div>
       </div>
-      
-      <!-- Specialties grid -->
-      <div class="space-y-6">
-        <div class="border-1 border-black rounded-hypr overflow-hidden hover:border-cyber-blue transition-colors duration-300">
-          <div class="border-b-1 border-black p-4 bg-black text-white">
-            <h3 class="font-bold">[1] Full-Stack Development</h3>
+
+      <!-- Right Column - Skills & Values -->
+      <div class="space-y-8">
+        <!-- Core Values -->
+        <div class="bg-brutal-blue text-mono-0 p-8 border-4 border-mono-1000 shadow-brutal-lg">
+          <div class="border-l-6 border-mono-0 pl-6 mb-6">
+            <h3 class="text-2xl font-black mb-4 uppercase">MY APPROACH</h3>
           </div>
-          <div class="p-4">
-            <p class="text-sm">
-              Proficient in modern web technologies, from React and Vue.js to Node.js and Python backends.
-            </p>
+          <ul class="space-y-4 font-bold text-lg">
+            <li class="flex items-center">
+              <span class="w-4 h-4 bg-brutal-yellow mr-4 border-2 border-mono-0"></span>
+              CLEAN, MAINTAINABLE CODE
+            </li>
+            <li class="flex items-center">
+              <span class="w-4 h-4 bg-brutal-green mr-4 border-2 border-mono-0"></span>
+              DATA-DRIVEN DECISIONS
+            </li>
+            <li class="flex items-center">
+              <span class="w-4 h-4 bg-brutal-red mr-4 border-2 border-mono-0"></span>
+              USER-CENTERED DESIGN
+            </li>
+            <li class="flex items-center">
+              <span class="w-4 h-4 bg-brutal-purple mr-4 border-2 border-mono-0"></span>
+              CONTINUOUS LEARNING
+            </li>
+          </ul>
+        </div>
+
+        <!-- Fun Facts -->
+        <div class="bg-brutal-green text-mono-1000 p-8 border-4 border-mono-1000 shadow-brutal-lg">
+          <div class="border-l-6 border-mono-1000 pl-6 mb-6">
+            <h3 class="text-2xl font-black mb-4 uppercase">FUN FACTS</h3>
+          </div>
+          <div class="space-y-4 font-bold">
+            <div class="flex items-center">
+              <span class="text-2xl mr-3">🚀</span>
+              <span>FASCINATED BY SPACE EXPLORATION</span>
+            </div>
+            <div class="flex items-center">
+              <span class="text-2xl mr-3">🧠</span>
+              <span>AI & ML ENTHUSIAST</span>
+            </div>
+            <div class="flex items-center">
+              <span class="text-2xl mr-3">🎮</span>
+              <span>GAME DEVELOPMENT HOBBYIST</span>
+            </div>
+            <div class="flex items-center">
+              <span class="text-2xl mr-3">📚</span>
+              <span>PERPETUAL LEARNER</span>
+            </div>
           </div>
         </div>
-        
-        <div class="border-1 border-black rounded-hypr overflow-hidden hover:border-cyber-blue transition-colors duration-300">
-          <div class="border-b-1 border-black p-4 bg-black text-white">
-            <h3 class="font-bold">[2] Data Science & ML</h3>
-          </div>
-          <div class="p-4">
-            <p class="text-sm">
-              Experienced in machine learning, data analysis, and building predictive models with Python and R.
-            </p>
-          </div>
-        </div>
-        
-        <div class="border-1 border-black rounded-hypr overflow-hidden hover:border-cyber-blue transition-colors duration-300">
-          <div class="border-b-1 border-black p-4 bg-black text-white">
-            <h3 class="font-bold">[3] Problem Solving</h3>
-          </div>
-          <div class="p-4">
-            <p class="text-sm">
-              Passionate about tackling complex challenges and finding elegant solutions that deliver real value.
-            </p>
-          </div>
+
+        <!-- CTA -->
+        <div class="bg-mono-1000 text-mono-0 p-8 border-4 border-mono-1000 shadow-brutal-lg text-center">
+          <h3 class="text-xl font-black mb-4 uppercase">LET'S BUILD SOMETHING</h3>
+          <a 
+            href="#contact" 
+            class="inline-block bg-brutal-orange text-mono-1000 px-6 py-3 border-4 border-mono-0 shadow-brutal font-bold uppercase tracking-wide hover:shadow-brutal-hover hover:translate-x-1 hover:translate-y-1 transition-all duration-200"
+          >
+            GET IN TOUCH →
+          </a>
         </div>
       </div>
     </div>
