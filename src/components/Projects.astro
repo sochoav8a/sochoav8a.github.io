@@ -13,13 +13,13 @@
   <div class="max-w-7xl mx-auto relative z-10">
     <!-- Section Header -->
     <div class="mb-16">
-      <div class="inline-block bg-brutal-blue text-mono-0 px-8 py-4 border-4 border-mono-1000 shadow-brutal-lg transform -rotate-1 mb-8">
-        <h2 class="text-4xl md:text-6xl font-black uppercase tracking-tight">
+      <div class="inline-block bg-brutal-blue text-mono-0 px-4 md:px-8 py-3 md:py-4 border-4 border-mono-1000 shadow-brutal-lg transform -rotate-1 mb-8">
+        <h2 class="text-3xl md:text-4xl lg:text-6xl font-black uppercase tracking-tight">
           MY WORK
         </h2>
       </div>
-      <div class="bg-mono-0 p-6 border-4 border-mono-1000 shadow-brutal max-w-3xl">
-        <p class="text-lg font-medium text-mono-800">
+      <div class="bg-mono-0 p-4 md:p-6 border-4 border-mono-1000 shadow-brutal max-w-3xl">
+        <p class="text-base md:text-lg font-medium text-mono-800">
           A COLLECTION OF PROJECTS THAT SHOWCASE MY SKILLS IN FULL-STACK DEVELOPMENT, 
           DATA SCIENCE, AND PROBLEM-SOLVING. EACH PROJECT TELLS A STORY OF INNOVATION AND EXECUTION.
         </p>
@@ -27,58 +27,62 @@
     </div>
 
     <!-- Projects Grid -->
-    <div class="grid lg:grid-cols-2 gap-8 mb-12">
-      <!-- Project 1 - Featured -->
-      <div class="lg:col-span-2 bg-brutal-red text-mono-0 p-8 border-4 border-mono-1000 shadow-brutal-lg hover:shadow-brutal transform hover:-translate-x-1 hover:-translate-y-1 transition-all duration-200">
-        <div class="grid lg:grid-cols-2 gap-8 items-center">
+    <div class="grid lg:grid-cols-2 gap-6 md:gap-8 mb-12">
+      <!-- Project 1 - CBAM CycleGAN Featured -->
+      <div class="lg:col-span-2 bg-brutal-red text-mono-0 p-6 md:p-8 border-4 border-mono-1000 shadow-brutal-lg hover:shadow-brutal transform hover:-translate-x-1 hover:-translate-y-1 transition-all duration-200">
+        <div class="grid lg:grid-cols-2 gap-6 md:gap-8 items-center">
           <div>
-            <div class="inline-block bg-mono-0 text-brutal-red px-4 py-2 border-4 border-mono-0 font-black text-sm mb-4">
+            <div class="inline-block bg-mono-0 text-brutal-red px-3 md:px-4 py-2 border-4 border-mono-0 font-black text-xs md:text-sm mb-4">
               FEATURED PROJECT
             </div>
-            <h3 class="text-3xl font-black mb-4 uppercase">E-COMMERCE ANALYTICS PLATFORM</h3>
-            <p class="text-lg font-medium mb-6 leading-relaxed">
-              Full-stack platform combining React frontend with Python ML backend. 
-              Real-time sales analytics, predictive modeling, and automated reporting system.
+            <h3 class="text-2xl md:text-3xl font-black mb-4 uppercase">CBAM CYCLEGAN</h3>
+            <p class="text-base md:text-lg font-medium mb-6 leading-relaxed">
+              Enhanced CycleGAN architecture incorporating Convolutional Block Attention Module (CBAM) 
+              for improved domain translation. Combines channel and spatial attention mechanisms.
             </p>
             <div class="flex flex-wrap gap-2 mb-6">
-              {['REACT', 'PYTHON', 'FASTAPI', 'POSTGRESQL', 'DOCKER'].map((tech) => (
-                <span class="bg-mono-0 text-brutal-red px-3 py-1 border-2 border-mono-0 font-bold text-sm">
+              {['PYTHON', 'PYTORCH', 'COMPUTER VISION', 'DEEP LEARNING', 'GANS'].map((tech) => (
+                <span class="bg-mono-0 text-brutal-red px-2 md:px-3 py-1 border-2 border-mono-0 font-bold text-xs md:text-sm">
                   {tech}
                 </span>
               ))}
             </div>
-            <div class="flex gap-4">
+            <div class="flex flex-col sm:flex-row gap-3 md:gap-4">
               <a 
-                href="#" 
-                class="bg-brutal-yellow text-mono-1000 px-6 py-3 border-4 border-mono-0 shadow-brutal font-bold uppercase tracking-wide hover:shadow-brutal-hover hover:translate-x-1 hover:translate-y-1 transition-all duration-200"
+                href="https://github.com/sochoav8a/cbam-cyclegan" 
+                target="_blank"
+                class="bg-brutal-yellow text-mono-1000 px-4 md:px-6 py-2 md:py-3 border-4 border-mono-0 shadow-brutal font-bold text-sm md:text-base uppercase tracking-wide hover:shadow-brutal-hover hover:translate-x-1 hover:translate-y-1 transition-all duration-200 text-center"
               >
-                VIEW LIVE →
+                VIEW CODE →
               </a>
               <a 
-                href="#" 
-                class="bg-mono-0 text-brutal-red px-6 py-3 border-4 border-mono-0 shadow-brutal font-bold uppercase tracking-wide hover:shadow-brutal-hover hover:translate-x-1 hover:translate-y-1 transition-all duration-200"
+                href="/cbam_cyclegan/PA2_final_paper.pdf" 
+                target="_blank"
+                class="bg-mono-0 text-brutal-red px-4 md:px-6 py-2 md:py-3 border-4 border-mono-0 shadow-brutal font-bold text-sm md:text-base uppercase tracking-wide hover:shadow-brutal-hover hover:translate-x-1 hover:translate-y-1 transition-all duration-200 text-center"
               >
-                CODE →
+                PAPER →
               </a>
             </div>
           </div>
           <div class="bg-mono-0 border-4 border-mono-0 p-4 aspect-video flex items-center justify-center">
-            <div class="text-brutal-red font-black text-2xl">
-              📊 ANALYTICS DASHBOARD
-            </div>
+            <img 
+              src="/cbam_cyclegan/arquitecture.png" 
+              alt="CBAM CycleGAN Architecture Diagram" 
+              class="w-full h-full object-contain"
+            />
           </div>
         </div>
       </div>
 
       <!-- Project 2 -->
-      <div class="bg-brutal-blue text-mono-0 p-8 border-4 border-mono-1000 shadow-brutal-lg hover:shadow-brutal transform hover:-translate-x-1 hover:-translate-y-1 transition-all duration-200">
+      <div class="bg-brutal-blue text-mono-0 p-6 md:p-8 border-4 border-mono-1000 shadow-brutal-lg hover:shadow-brutal transform hover:-translate-x-1 hover:-translate-y-1 transition-all duration-200">
         <div class="bg-mono-0 border-4 border-mono-0 p-4 aspect-video flex items-center justify-center mb-6">
-          <div class="text-brutal-blue font-black text-xl">
+          <div class="text-brutal-blue font-black text-lg md:text-xl">
             🤖 ML MODEL
           </div>
         </div>
-        <h3 class="text-2xl font-black mb-4 uppercase">SENTIMENT ANALYSIS API</h3>
-        <p class="font-medium mb-4 leading-relaxed">
+        <h3 class="text-xl md:text-2xl font-black mb-4 uppercase">SENTIMENT ANALYSIS API</h3>
+        <p class="font-medium mb-4 leading-relaxed text-sm md:text-base">
           REST API for real-time sentiment analysis using transformer models. 
           Deployed with Docker and handles 1000+ requests per minute.
         </p>
@@ -89,16 +93,16 @@
             </span>
           ))}
         </div>
-        <div class="flex gap-3">
+        <div class="flex flex-col sm:flex-row gap-3">
           <a 
             href="#" 
-            class="bg-brutal-yellow text-mono-1000 px-4 py-2 border-3 border-mono-0 shadow-brutal font-bold text-sm uppercase hover:shadow-brutal-hover hover:translate-x-1 hover:translate-y-1 transition-all duration-200"
+            class="bg-brutal-yellow text-mono-1000 px-3 md:px-4 py-2 border-3 border-mono-0 shadow-brutal font-bold text-xs md:text-sm uppercase hover:shadow-brutal-hover hover:translate-x-1 hover:translate-y-1 transition-all duration-200 text-center"
           >
             DEMO →
           </a>
           <a 
             href="#" 
-            class="bg-mono-0 text-brutal-blue px-4 py-2 border-3 border-mono-0 shadow-brutal font-bold text-sm uppercase hover:shadow-brutal-hover hover:translate-x-1 hover:translate-y-1 transition-all duration-200"
+            class="bg-mono-0 text-brutal-blue px-3 md:px-4 py-2 border-3 border-mono-0 shadow-brutal font-bold text-xs md:text-sm uppercase hover:shadow-brutal-hover hover:translate-x-1 hover:translate-y-1 transition-all duration-200 text-center"
           >
             CODE →
           </a>
@@ -106,14 +110,14 @@
       </div>
 
       <!-- Project 3 -->
-      <div class="bg-brutal-green text-mono-1000 p-8 border-4 border-mono-1000 shadow-brutal-lg hover:shadow-brutal transform hover:-translate-x-1 hover:-translate-y-1 transition-all duration-200">
+      <div class="bg-brutal-green text-mono-1000 p-6 md:p-8 border-4 border-mono-1000 shadow-brutal-lg hover:shadow-brutal transform hover:-translate-x-1 hover:-translate-y-1 transition-all duration-200">
         <div class="bg-mono-1000 border-4 border-mono-1000 p-4 aspect-video flex items-center justify-center mb-6">
-          <div class="text-brutal-green font-black text-xl">
+          <div class="text-brutal-green font-black text-lg md:text-xl">
             🌐 WEB APP
           </div>
         </div>
-        <h3 class="text-2xl font-black mb-4 uppercase">TASK MANAGEMENT SYSTEM</h3>
-        <p class="font-medium mb-4 leading-relaxed">
+        <h3 class="text-xl md:text-2xl font-black mb-4 uppercase">TASK MANAGEMENT SYSTEM</h3>
+        <p class="font-medium mb-4 leading-relaxed text-sm md:text-base">
           Vue.js SPA with Node.js backend. Real-time collaboration, 
           kanban boards, and advanced filtering capabilities.
         </p>
@@ -124,16 +128,16 @@
             </span>
           ))}
         </div>
-        <div class="flex gap-3">
+        <div class="flex flex-col sm:flex-row gap-3">
           <a 
             href="#" 
-            class="bg-brutal-red text-mono-0 px-4 py-2 border-3 border-mono-1000 shadow-brutal font-bold text-sm uppercase hover:shadow-brutal-hover hover:translate-x-1 hover:translate-y-1 transition-all duration-200"
+            class="bg-brutal-red text-mono-0 px-3 md:px-4 py-2 border-3 border-mono-1000 shadow-brutal font-bold text-xs md:text-sm uppercase hover:shadow-brutal-hover hover:translate-x-1 hover:translate-y-1 transition-all duration-200 text-center"
           >
             LIVE →
           </a>
           <a 
             href="#" 
-            class="bg-mono-1000 text-brutal-green px-4 py-2 border-3 border-mono-1000 shadow-brutal font-bold text-sm uppercase hover:shadow-brutal-hover hover:translate-x-1 hover:translate-y-1 transition-all duration-200"
+            class="bg-mono-1000 text-brutal-green px-3 md:px-4 py-2 border-3 border-mono-1000 shadow-brutal font-bold text-xs md:text-sm uppercase hover:shadow-brutal-hover hover:translate-x-1 hover:translate-y-1 transition-all duration-200 text-center"
           >
             CODE →
           </a>
@@ -141,14 +145,14 @@
       </div>
 
       <!-- Project 4 -->
-      <div class="bg-brutal-yellow text-mono-1000 p-8 border-4 border-mono-1000 shadow-brutal-lg hover:shadow-brutal transform hover:-translate-x-1 hover:-translate-y-1 transition-all duration-200">
+      <div class="bg-brutal-yellow text-mono-1000 p-6 md:p-8 border-4 border-mono-1000 shadow-brutal-lg hover:shadow-brutal transform hover:-translate-x-1 hover:-translate-y-1 transition-all duration-200">
         <div class="bg-mono-1000 border-4 border-mono-1000 p-4 aspect-video flex items-center justify-center mb-6">
-          <div class="text-brutal-yellow font-black text-xl">
+          <div class="text-brutal-yellow font-black text-lg md:text-xl">
             📱 MOBILE
           </div>
         </div>
-        <h3 class="text-2xl font-black mb-4 uppercase">DATA VISUALIZATION TOOL</h3>
-        <p class="font-medium mb-4 leading-relaxed">
+        <h3 class="text-xl md:text-2xl font-black mb-4 uppercase">DATA VISUALIZATION TOOL</h3>
+        <p class="font-medium mb-4 leading-relaxed text-sm md:text-base">
           Interactive dashboard for complex datasets. Built with D3.js 
           and React, featuring custom charts and real-time updates.
         </p>
@@ -159,16 +163,16 @@
             </span>
           ))}
         </div>
-        <div class="flex gap-3">
+        <div class="flex flex-col sm:flex-row gap-3">
           <a 
             href="#" 
-            class="bg-brutal-purple text-mono-0 px-4 py-2 border-3 border-mono-1000 shadow-brutal font-bold text-sm uppercase hover:shadow-brutal-hover hover:translate-x-1 hover:translate-y-1 transition-all duration-200"
+            class="bg-brutal-purple text-mono-0 px-3 md:px-4 py-2 border-3 border-mono-1000 shadow-brutal font-bold text-xs md:text-sm uppercase hover:shadow-brutal-hover hover:translate-x-1 hover:translate-y-1 transition-all duration-200 text-center"
           >
             VIEW →
           </a>
           <a 
             href="#" 
-            class="bg-mono-1000 text-brutal-yellow px-4 py-2 border-3 border-mono-1000 shadow-brutal font-bold text-sm uppercase hover:shadow-brutal-hover hover:translate-x-1 hover:translate-y-1 transition-all duration-200"
+            class="bg-mono-1000 text-brutal-yellow px-3 md:px-4 py-2 border-3 border-mono-1000 shadow-brutal font-bold text-xs md:text-sm uppercase hover:shadow-brutal-hover hover:translate-x-1 hover:translate-y-1 transition-all duration-200 text-center"
           >
             CODE →
           </a>
@@ -176,14 +180,14 @@
       </div>
 
       <!-- Project 5 -->
-      <div class="bg-brutal-purple text-mono-0 p-8 border-4 border-mono-1000 shadow-brutal-lg hover:shadow-brutal transform hover:-translate-x-1 hover:-translate-y-1 transition-all duration-200">
+      <div class="bg-brutal-purple text-mono-0 p-6 md:p-8 border-4 border-mono-1000 shadow-brutal-lg hover:shadow-brutal transform hover:-translate-x-1 hover:-translate-y-1 transition-all duration-200">
         <div class="bg-mono-0 border-4 border-mono-0 p-4 aspect-video flex items-center justify-center mb-6">
-          <div class="text-brutal-purple font-black text-xl">
+          <div class="text-brutal-purple font-black text-lg md:text-xl">
             ☁️ CLOUD
           </div>
         </div>
-        <h3 class="text-2xl font-black mb-4 uppercase">MICROSERVICES ARCHITECTURE</h3>
-        <p class="font-medium mb-4 leading-relaxed">
+        <h3 class="text-xl md:text-2xl font-black mb-4 uppercase">MICROSERVICES ARCHITECTURE</h3>
+        <p class="font-medium mb-4 leading-relaxed text-sm md:text-base">
           Scalable microservices system on AWS. Container orchestration 
           with Kubernetes and CI/CD pipeline implementation.
         </p>
@@ -194,16 +198,16 @@
             </span>
           ))}
         </div>
-        <div class="flex gap-3">
+        <div class="flex flex-col sm:flex-row gap-3">
           <a 
             href="#" 
-            class="bg-brutal-orange text-mono-1000 px-4 py-2 border-3 border-mono-0 shadow-brutal font-bold text-sm uppercase hover:shadow-brutal-hover hover:translate-x-1 hover:translate-y-1 transition-all duration-200"
+            class="bg-brutal-orange text-mono-1000 px-3 md:px-4 py-2 border-3 border-mono-0 shadow-brutal font-bold text-xs md:text-sm uppercase hover:shadow-brutal-hover hover:translate-x-1 hover:translate-y-1 transition-all duration-200 text-center"
           >
             DOCS →
           </a>
           <a 
             href="#" 
-            class="bg-mono-0 text-brutal-purple px-4 py-2 border-3 border-mono-0 shadow-brutal font-bold text-sm uppercase hover:shadow-brutal-hover hover:translate-x-1 hover:translate-y-1 transition-all duration-200"
+            class="bg-mono-0 text-brutal-purple px-3 md:px-4 py-2 border-3 border-mono-0 shadow-brutal font-bold text-xs md:text-sm uppercase hover:shadow-brutal-hover hover:translate-x-1 hover:translate-y-1 transition-all duration-200 text-center"
           >
             CODE →
           </a>
@@ -212,15 +216,15 @@
     </div>
 
     <!-- CTA Section -->
-    <div class="bg-mono-1000 text-mono-0 p-8 border-4 border-mono-1000 shadow-brutal-lg text-center">
-      <h3 class="text-3xl font-black mb-4 uppercase">MORE PROJECTS ON GITHUB</h3>
-      <p class="text-lg font-medium mb-6">
+    <div class="bg-mono-1000 text-mono-0 p-6 md:p-8 border-4 border-mono-1000 shadow-brutal-lg text-center">
+      <h3 class="text-2xl md:text-3xl font-black mb-4 uppercase">MORE PROJECTS ON GITHUB</h3>
+      <p class="text-base md:text-lg font-medium mb-6">
         EXPLORE MY COMPLETE PORTFOLIO AND CONTRIBUTE TO OPEN SOURCE PROJECTS
       </p>
       <a 
         href="https://github.com/sochoav8a" 
         target="_blank"
-        class="inline-block bg-brutal-yellow text-mono-1000 px-8 py-4 border-4 border-mono-0 shadow-brutal font-bold text-lg uppercase tracking-wide hover:shadow-brutal-hover hover:translate-x-1 hover:translate-y-1 transition-all duration-200"
+        class="inline-block bg-brutal-yellow text-mono-1000 px-6 md:px-8 py-3 md:py-4 border-4 border-mono-0 shadow-brutal font-bold text-base md:text-lg uppercase tracking-wide hover:shadow-brutal-hover hover:translate-x-1 hover:translate-y-1 transition-all duration-200"
       >
         VIEW GITHUB →
       </a>

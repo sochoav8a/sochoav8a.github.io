@@ -2,172 +2,116 @@
 // Brutalist Footer Design
 ---
 
-<footer class="bg-mono-1000 text-mono-0 py-16 px-6 relative overflow-hidden">
-  <!-- Background geometric elements -->
-  <div class="absolute inset-0">
-    <div class="absolute top-0 left-0 w-32 h-32 bg-brutal-yellow transform rotate-45 opacity-20"></div>
-    <div class="absolute bottom-0 right-0 w-24 h-48 bg-brutal-red transform -rotate-12 opacity-15"></div>
-    <div class="absolute top-1/2 left-1/3 w-20 h-20 bg-brutal-blue opacity-25"></div>
-    <div class="absolute bottom-1/4 left-1/4 w-16 h-16 bg-brutal-green transform rotate-12 opacity-20"></div>
-  </div>
-
-  <div class="max-w-7xl mx-auto relative z-10">
-    <!-- Main Footer Content -->
-    <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
-      <!-- Brand & Quote -->
-      <div class="md:col-span-2">
-        <div class="bg-brutal-red text-mono-0 px-6 py-3 border-4 border-mono-0 shadow-brutal inline-block mb-6 transform -rotate-1">
-          <h3 class="text-2xl font-black uppercase tracking-wide">
-            S.OCHOA
-          </h3>
-        </div>
-        <div class="bg-mono-0 text-mono-1000 p-6 border-4 border-mono-0 shadow-brutal mb-6">
-          <p class="text-lg font-bold leading-relaxed">
-            "CODE IS POETRY, DATA IS TRUTH, AND DESIGN IS THE BRIDGE BETWEEN WORLDS."
-          </p>
-          <div class="text-right mt-4">
-            <span class="font-black text-sm">— SANTIAGO OCHOA</span>
-          </div>
-        </div>
-        <div class="space-y-3">
-          <div class="flex items-center">
-            <div class="w-6 h-6 bg-brutal-yellow border-2 border-mono-0 mr-3 flex items-center justify-center">
-              <span class="text-xs font-black">📍</span>
-            </div>
-            <span class="font-bold">REMOTE WORLDWIDE</span>
-          </div>
-          <div class="flex items-center">
-            <div class="w-6 h-6 bg-brutal-green border-2 border-mono-0 mr-3 flex items-center justify-center">
-              <span class="text-xs font-black">📧</span>
-            </div>
-            <a href="mailto:contact@santiagoochoa.dev" class="font-bold hover:text-brutal-yellow transition-colors duration-200">
-              CONTACT@SANTIAGOOCHOA.DEV
-            </a>
-          </div>
+<footer class="bg-mono-1000 text-mono-0 py-12 px-6 border-t-4 border-mono-1000">
+  <div class="max-w-7xl mx-auto">
+    <!-- Footer Content -->
+    <div class="grid md:grid-cols-3 gap-6 md:gap-8 mb-8">
+      <!-- Personal Info -->
+      <div class="bg-brutal-blue text-mono-0 p-4 md:p-6 border-4 border-mono-0 shadow-brutal">
+        <h3 class="text-lg md:text-xl font-black uppercase mb-4">SANTIAGO OCHOA</h3>
+        <p class="font-medium text-sm md:text-base leading-relaxed mb-4">
+          FULL-STACK DEVELOPER & DATA SCIENTIST CRAFTING DIGITAL EXPERIENCES 
+          THAT BRIDGE TECHNOLOGY AND INNOVATION.
+        </p>
+        <div class="flex space-x-2">
+          <a 
+            href="https://github.com/sochoav8a" 
+            target="_blank"
+            class="w-8 h-8 bg-mono-0 text-brutal-blue border-2 border-mono-0 flex items-center justify-center font-bold hover:bg-brutal-yellow hover:text-mono-1000 transition-colors duration-200"
+            aria-label="GitHub"
+          >
+            <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24">
+              <path d="M12 0C5.374 0 0 5.373 0 12 0 17.302 3.438 21.8 8.207 23.387c.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0112 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/>
+            </svg>
+          </a>
+          <a 
+            href="https://linkedin.com/in/sochoav1" 
+            target="_blank"
+            class="w-8 h-8 bg-mono-0 text-brutal-blue border-2 border-mono-0 flex items-center justify-center font-bold hover:bg-brutal-yellow hover:text-mono-1000 transition-colors duration-200"
+            aria-label="LinkedIn"
+          >
+            <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24">
+              <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+            </svg>
+          </a>
+          <a 
+            href="mailto:sochoav8a@gmail.com" 
+            class="w-8 h-8 bg-mono-0 text-brutal-blue border-2 border-mono-0 flex items-center justify-center font-bold hover:bg-brutal-yellow hover:text-mono-1000 transition-colors duration-200"
+            aria-label="Email"
+          >
+            <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24">
+              <path d="M24 5.457v13.909c0 .904-.732 1.636-1.636 1.636h-3.819V11.73L12 16.64l-6.545-4.91v9.273H1.636A1.636 1.636 0 0 1 0 19.366V5.457c0-.904.732-1.636 1.636-1.636h1.909L12 10.815l8.455-6.994h1.909c.904 0 1.636.732 1.636 1.636z"/>
+            </svg>
+          </a>
         </div>
       </div>
 
       <!-- Quick Links -->
-      <div class="bg-brutal-blue text-mono-0 p-6 border-4 border-mono-0 shadow-brutal">
-        <div class="border-l-4 border-mono-0 pl-4 mb-6">
-          <h4 class="text-xl font-black uppercase">QUICK LINKS</h4>
+      <div class="bg-brutal-red text-mono-0 p-4 md:p-6 border-4 border-mono-0 shadow-brutal">
+        <h3 class="text-lg md:text-xl font-black uppercase mb-4">NAVIGATION</h3>
+        <div class="grid grid-cols-2 gap-2">
+          <a href="#about" class="font-bold text-sm md:text-base hover:text-brutal-yellow transition-colors duration-200">ABOUT</a>
+          <a href="#skills" class="font-bold text-sm md:text-base hover:text-brutal-yellow transition-colors duration-200">SKILLS</a>
+          <a href="#projects" class="font-bold text-sm md:text-base hover:text-brutal-yellow transition-colors duration-200">PROJECTS</a>
+          <a href="#contact" class="font-bold text-sm md:text-base hover:text-brutal-yellow transition-colors duration-200">CONTACT</a>
         </div>
-        <nav class="space-y-3">
-          <a href="#about" class="block font-bold hover:text-brutal-yellow transition-colors duration-200 hover:translate-x-1 transform">
-            → ABOUT ME
-          </a>
-          <a href="#projects" class="block font-bold hover:text-brutal-yellow transition-colors duration-200 hover:translate-x-1 transform">
-            → MY WORK
-          </a>
-          <a href="#skills" class="block font-bold hover:text-brutal-yellow transition-colors duration-200 hover:translate-x-1 transform">
-            → SKILLS
-          </a>
-          <a href="#contact" class="block font-bold hover:text-brutal-yellow transition-colors duration-200 hover:translate-x-1 transform">
-            → CONTACT
-          </a>
-        </nav>
       </div>
 
-      <!-- Social & Professional -->
-      <div class="bg-brutal-green text-mono-1000 p-6 border-4 border-mono-0 shadow-brutal">
-        <div class="border-l-4 border-mono-1000 pl-4 mb-6">
-          <h4 class="text-xl font-black uppercase">CONNECT</h4>
-        </div>
-        <div class="space-y-4">
-          <a 
-            href="https://github.com/sochoav8a" 
-            target="_blank"
-            class="flex items-center font-bold hover:text-brutal-red transition-colors duration-200"
-          >
-            <div class="w-8 h-8 bg-mono-1000 text-brutal-green border-2 border-mono-1000 flex items-center justify-center mr-3 text-xl">
-              🐙
-            </div>
-            GITHUB
-          </a>
-          
-          <a 
-            href="https://linkedin.com/in/sochoav8a" 
-            target="_blank"
-            class="flex items-center font-bold hover:text-brutal-blue transition-colors duration-200"
-          >
-            <div class="w-8 h-8 bg-mono-1000 text-brutal-green border-2 border-mono-1000 flex items-center justify-center mr-3 text-xl">
-              💼
-            </div>
-            LINKEDIN
-          </a>
-          
-          <a 
-            href="https://twitter.com/sochoav8a" 
-            target="_blank"
-            class="flex items-center font-bold hover:text-brutal-yellow transition-colors duration-200"
-          >
-            <div class="w-8 h-8 bg-mono-1000 text-brutal-green border-2 border-mono-1000 flex items-center justify-center mr-3 text-xl">
-              🐦
-            </div>
-            TWITTER
-          </a>
+      <!-- Skills Summary -->
+      <div class="bg-brutal-green text-mono-1000 p-4 md:p-6 border-4 border-mono-1000 shadow-brutal">
+        <h3 class="text-lg md:text-xl font-black uppercase mb-4">EXPERTISE</h3>
+        <div class="space-y-2">
+          <div class="font-bold text-sm md:text-base">→ FRONTEND DEVELOPMENT</div>
+          <div class="font-bold text-sm md:text-base">→ BACKEND SYSTEMS</div>
+          <div class="font-bold text-sm md:text-base">→ DATA SCIENCE & ML</div>
+          <div class="font-bold text-sm md:text-base">→ CLOUD ARCHITECTURE</div>
         </div>
       </div>
     </div>
 
-    <!-- Skills Summary -->
-    <div class="bg-brutal-yellow text-mono-1000 p-6 border-4 border-mono-0 shadow-brutal mb-8">
-      <div class="text-center">
-        <h4 class="text-xl font-black uppercase mb-4">EXPERTISE SUMMARY</h4>
-        <div class="flex flex-wrap justify-center gap-4">
-          {[
-            'FULL-STACK DEV', 'DATA SCIENCE', 'MACHINE LEARNING', 'PYTHON', 
-            'REACT', 'NODE.JS', 'POSTGRESQL', 'AWS', 'DOCKER', 'GIT'
-          ].map((skill) => (
-            <span class="bg-mono-1000 text-brutal-yellow px-3 py-1 border-2 border-mono-1000 font-bold text-sm hover:bg-brutal-red hover:text-mono-0 transition-colors duration-200">
-              {skill}
-            </span>
-          ))}
-        </div>
-      </div>
-    </div>
-
-    <!-- Bottom Section -->
-    <div class="grid md:grid-cols-3 gap-8 items-center">
-      <!-- Copyright -->
-      <div class="bg-mono-0 text-mono-1000 p-4 border-4 border-mono-0 shadow-brutal text-center md:text-left">
-        <p class="font-bold text-sm">
-          © 2024 SANTIAGO OCHOA
-          <br />
-          ALL RIGHTS RESERVED
-        </p>
-      </div>
-
-      <!-- Status -->
-      <div class="text-center">
-        <div class="inline-flex items-center bg-brutal-purple text-mono-0 px-4 py-2 border-4 border-mono-0 shadow-brutal">
-          <div class="w-3 h-3 bg-green-500 rounded-full mr-2 animate-pulse"></div>
-          <span class="font-bold text-sm">AVAILABLE FOR HIRE</span>
-        </div>
-      </div>
-
-      <!-- Back to Top -->
-      <div class="text-center md:text-right">
-        <a 
-          href="#top" 
-          class="inline-block bg-brutal-orange text-mono-1000 px-6 py-3 border-4 border-mono-0 shadow-brutal font-bold uppercase tracking-wide hover:shadow-brutal-hover hover:translate-x-1 hover:translate-y-1 transition-all duration-200"
-        >
-          ↑ TOP
-        </a>
-      </div>
-    </div>
-
-    <!-- Terminal Style Bottom -->
-    <div class="mt-8 bg-mono-0 text-mono-1000 p-4 border-4 border-mono-0 shadow-brutal">
-      <div class="flex items-center justify-between">
-        <div class="flex items-center">
-          <span class="font-mono text-sm">user@portfolio:~$</span>
-          <span class="ml-2 font-mono text-sm">echo "THANKS FOR VISITING!"</span>
-        </div>
-        <div class="font-mono text-sm">
-          [BUILD: {new Date().getFullYear()}]
-        </div>
-      </div>
+    <!-- Copyright -->
+    <div class="text-center border-t-4 border-mono-0 pt-6">
+      <p class="font-bold text-sm md:text-base">
+        © 2025 SANTIAGO OCHOA. ALL RIGHTS RESERVED.
+      </p>
+      <p class="font-medium text-xs md:text-sm text-mono-400 mt-2">
+        BUILT WITH ASTRO & TAILWIND CSS
+      </p>
     </div>
   </div>
-</footer> 
+</footer>
+
+<!-- Back to Top Button -->
+<button 
+  id="backToTop"
+  class="fixed bottom-6 right-6 bg-brutal-yellow text-mono-1000 w-12 h-12 border-4 border-mono-1000 shadow-brutal font-bold text-xl opacity-0 invisible transition-all duration-300 hover:shadow-brutal-hover hover:translate-x-1 hover:translate-y-1 z-50"
+  aria-label="Back to top"
+>
+  ↑
+</button>
+
+<script>
+  // Back to top functionality
+  const backToTopButton = document.getElementById('backToTop');
+  
+  if (backToTopButton) {
+    // Show/hide button based on scroll position
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 300) {
+        backToTopButton.classList.remove('opacity-0', 'invisible');
+        backToTopButton.classList.add('opacity-100', 'visible');
+      } else {
+        backToTopButton.classList.remove('opacity-100', 'visible');
+        backToTopButton.classList.add('opacity-0', 'invisible');
+      }
+    });
+
+    // Scroll to top when clicked
+    backToTopButton.addEventListener('click', () => {
+      window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+      });
+    });
+  }
+</script> 
