@@ -58,7 +58,7 @@ Portfolio personal construido con **Astro v4** y **Tailwind CSS**, desplegado au
 ## 🎨 Secciones del Portfolio
 
 ### Hero Section
-- **Headline:** "Santiago Ochoa — Developer & Data Wizard"
+- **Headline:** "Santiago Ochoa — Developer & Data scientist"
 - Gradiente animado y call-to-action buttons
 - Indicador de scroll animado
 
